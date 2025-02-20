@@ -1,0 +1,61 @@
+footer {
+  margin: 0 auto;
+  background-color: #4a6644;
+  color: #faf8e7;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+}
+footer .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+footer .footer .logo-footer img {
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+footer .footer .info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+footer .footer .info .info-sector,
+footer .footer .info .info-sector2,
+footer .footer .info .info-sector3 {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+footer .footer .info .info-sector ul,
+footer .footer .info .info-sector2 ul,
+footer .footer .info .info-sector3 ul {
+  padding: 0;
+  /* Убираем отступы у списка */
+}
+footer .footer .info .info-sector ul li,
+footer .footer .info .info-sector2 ul li,
+footer .footer .info .info-sector3 ul li {
+  margin: 10px 0;
+  /* Отступы между элементами списка */
+  transition: color 0.3s;
+  /* Плавный переход цвета при наведении */
+}
+footer .footer .info .info-sector ul li:hover,
+footer .footer .info .info-sector2 ul li:hover,
+footer .footer .info .info-sector3 ul li:hover {
+  color: #ffbe5c;
+  /* Цвет текста при наведении */
+  cursor: pointer;
+  /* Курсор в виде указателя при наведении */
+}
+@media (max-width: 768px) {
+  .info {
+    flex-direction: column;
+    /* Вертикальное выравнивание на маленьких экранах */
+    align-items: center;
+    /* Центрирование содержимого */
+  }
+}

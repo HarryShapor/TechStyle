@@ -1,0 +1,104 @@
+@width: 600px;
+@height: calc(@width*0.5);
+@countImage: 5;
+@countImageTime: calc(@countImage*4);
+@backgroudColor: #bdecc1;
+@color1: #faf8e7;
+@color2: #4a6644;
+@color3: #bdecc1;
+
+.sl {
+    padding: 0.5%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    background-image: url("images/fonslide.jpg");
+    background-size: auto;
+    // background-repeat: repeat-y;
+    .slider {
+        margin: 0 auto;
+        justify-content: center;
+        min-width: 300px;
+        max-width: @width;
+        height: @height;
+        overflow: hidden;
+        position: relative;
+        border-radius: 30px;
+        .slider_line {
+            display: flex;
+            transition: all 1s;
+            animation: anim_slide 30s infinite;
+            .slider_image {
+                width: 100%;
+                height: 100%;
+            }
+        } 
+    }
+    .slider_btn_prev, .slider_btn_next {
+        position: relative;
+        top: 50%;
+        font-size: 30px;
+        border: 1px @color2 solid;
+        border-radius: 100%;
+
+        background-color: @color2;
+        line-height: 0;
+        cursor: pointer;
+    }
+    .slider_btn_prev {
+        left: 100%;
+        transform: translateY(-50%);
+        &:hover{
+            border: 1px @color3 solid;
+        }
+    }
+    .slider_btn_next {
+        right: 25%;
+        transform: translateY(-50%);
+        &:hover{
+            border: 1px @color3 solid;
+        }
+    }
+}
+
+// .controls {
+//     margin: 2% 0 0 0;
+//     width: 100%;
+//     height: 50px;
+//     label {
+//         transition: opacity 0.2s ease-out;
+//         &:hover{
+//             opacity: 0.6;
+//         }
+//     }
+// }
+// .active  {
+//     margin: 2% 0 0;
+//     text-align: center;
+//     label {
+//         border: 1px solid @color1;
+//         border-radius: 10px;
+//         display: inline-block;
+//         width: 15px;
+//         height: 15px;
+//         background: @color1;
+//         &:hover {
+//             background: @color2;
+//             border: 1px solid;
+//             border-color: #000000 !important;
+//         }
+//     }
+// }
+
+@-webkit-keyframes anim_slide {
+    0% { transform: translateX(0);}
+    10% { transform: translateX(0);}
+    20% { transform: translateX(-100%);}
+    30% { transform: translateX(-100%);}
+    40% { transform: translateX(-200%);}
+    50% { transform: translateX(-200%);}
+    60% { transform: translateX(-300%);}
+    70% { transform: translateX(-300%);}
+    80% { transform: translateX(-400%);}
+    90% { transform: translateX(-400%);}
+    100% { transform: translateX(0); }
+}

@@ -1,0 +1,166 @@
+@color1: #faf8e7;
+@color2: #4a6644;
+@color3: #bdecc1;
+.main {
+    background-color: #bdecc1;
+    width: 100%;
+    .title-main {
+        width: inherit;
+        font-size: 50px;
+        //font-family: Georgia, 'Times New Roman', Times, serif;
+        font-family: Lobster, display !important;
+    }
+    .frame-main {
+        margin: 0 10%;
+        .frame {
+            margin: 5% 5%;
+            padding: 5% 5%;
+            background-color: antiquewhite;
+            border: solid 1px black;
+            border-radius: 15px;
+            height: 400px;         
+            .img_card {
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 30px;
+                }
+            }
+            .product-name {
+                font-size: calc((100vw - 480px)/(1920 - 1080) * (48px - 16px) + 32px);
+                font-family: "Edu AU VIC WA NT Pre", cursive;
+                font-optical-sizing: auto;
+                font-weight: weight;
+                font-style: normal;
+            }
+            .price {
+                // font-family: Arial, Helvetica, sans-serif;
+                font-size: 25px;
+                font-family: "Edu AU VIC WA NT Pre", cursive;
+                font-optical-sizing: auto;
+                font-weight: weight;
+                font-style: normal;
+                margin: 5% 0 0 0;
+            }
+            .button {
+                margin: 0;
+                a {
+                    background-color: #4a6644;
+                    color:#FFF;
+                    // font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-family: Itim, display !important;
+                    font-size: 15px;
+                    padding: 10px 20px;
+                    border-radius: 70px;
+                }
+            }
+        }
+    }
+}
+
+
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed;
+    z-index: 1; /* Сидит на верхнем уровне */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: auto; /* Включает прокрутку, если необходимо */
+    background-color: rgb(0,0,0); /* Черный фон */
+    background-color: rgba(0,0,0,0.8); /* Черный фон с прозрачностью */
+    .modal-content {
+        background-color: #bdecc1;
+        margin: 15% auto; /* 15% сверху и центрирование по горизонтали */
+        padding: 20px;
+        border: 1px solid #000000;
+        border-radius: 30px;
+        width: 400px; /* Ширина модального окна */
+        height: 38%;
+        .close {
+            color: #000;
+            float: right;
+            font-size: 32px;
+            font-weight: bold;
+            &:hover, &:focus {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
+        .reg 
+        {
+            text-align: center;
+            a {
+                font-size: 18px;
+                color: black;
+                &:hover {
+                    color: #1d59ff;
+                }
+            }
+        }   
+    }
+}
+
+form {
+    .add-to-cart-form {
+        background-color: @color1; 
+        border: 1px solid #ccc; 
+        border-radius: 5px; 
+        padding: 20px; 
+        max-width: 100%; 
+        margin: auto; 
+    }
+    .product-info {
+        margin-bottom: 15px; /* Отступы между полями ввода */
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    input.inputform {
+        border-radius: 30px;
+        border: #4a6644 1px solid;
+        height: 35px;
+    }
+    input.inputform:focus {
+        border: #4a6644 2px solid;
+    }
+    .btn-add-to-cart {
+        background-color: @color2;
+        color: white; 
+        padding: 10px 15px;
+        border: none; 
+        border-radius: 4px; 
+        cursor: pointer; 
+        position: relative;
+        width: 60%;
+        padding: 0 10px;
+        margin-top: 5px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        color: white;
+        background-color: #4a6644;
+        border-radius: 30px;
+        border: solid 1px #fff;
+        :hover {
+            background-color: #ffffff;
+            color: #4a6644;
+            border: #4a6644 1px solid;
+        }
+    }
+    
+    .btn-add-to-cart:hover {
+        background-color: #218838;
+    }
+}
+
+.has-success {
+    border: #4a6644 2px solid;
+}
+
+.has-error {
+    border: #ff0000 2px solid;
+}

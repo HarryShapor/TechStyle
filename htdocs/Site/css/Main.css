@@ -1,0 +1,241 @@
+/* Общеиспользуемые селекторы */
+* {
+    margin: 0;
+    padding: 0;
+}
+.text-center {
+    text-align: center;
+}
+a {text-decoration: none;}
+
+.grid {display: grid;}
+.grid-2 {
+    grid-template-rows: repeat(2,1fr);
+}
+.grid-3 {
+    grid-template-columns: repeat(3,1fr);
+}
+.grid-10 {
+    grid-template-columns: repeat(10,1fr);
+}
+.grid-2-columns-hat {
+    grid-template-columns: 20% 80%;
+    gap: 0;
+}
+.grid-3-rows {
+    grid-template-rows: repeat(3,1fr);
+}
+
+.grid-4-rows {
+    grid-template-rows: 70% 15% 3% 12%;
+}
+/* Шапка страницы */
+
+header {
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    /* grid-template-rows: repeat(2,1fr); */
+    min-height: 200px;
+    max-height: 350px;
+    background-color: #4a6644;
+}
+.title_and_search {
+    margin-left: 15%;
+}
+/* Логотип */
+.logo {
+    /* border: solid 1px white; */
+    border-radius: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+.logo img {
+    /* min-width: 50px;
+    min-height: 50px; */
+    width: 100%;
+    height: 80%;
+    /* max-height: 200px;
+    max-width: 200px; */
+}
+
+/* Название */
+.title {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 50px;
+    height: 60px;
+    justify-content: center;
+  }
+.title a:visited, .title a {
+    color: #faf8e7;
+    font-family: Lobster, display !important;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    font-size: 120px;
+}
+/* Поисковая строка */
+.search {
+    padding-top: 5%;
+}
+
+.search form {
+    position: relative;
+    margin: 0 auto;
+    /* padding-left: 15%; */
+    max-width: 1500px;
+    width: 1000px;
+    min-width: 400px;
+}
+
+input::-webkit-input-placeholder {
+    color: #000; 
+    font-style: italic; 
+    background-color: #faf8e7;
+}
+input:-moz-placeholder {
+    color: #000; 
+    font-style: italic; 
+    background-color: #faf8e7;
+}
+input:-ms-input-placeholder {
+    color: #000; 
+    font-style: italic; 
+    background-color: #faf8e7;
+}
+input {
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    border: 2px solid #bdecc1;
+    border-radius: 15px;
+    outline: none;
+    background: #faf8e7;
+    color: #000;
+    font-size: 20px;
+}
+header button {
+    position: absolute; 
+    top: 0;
+    right: 0px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background: #bdecc1;
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+}
+header button:before {
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: #000;
+}
+/* Менюшка */
+.menu {
+    padding: 15px;
+    margin: 10px;
+}
+.menu-buttons-block {
+    margin-top: 2%;
+}
+.menu-button {
+    position: relative;
+    background-color: #faf8e7;
+    border: solid 1px black;
+    width: 58px;
+    height: 58px;
+    border-radius: 30px;
+}
+.menu-button .stick-menu {
+    margin: 45% auto;
+}
+
+.menu .reg {
+    position: inherit;
+}
+.menu a, .menu .reg {
+    padding: 10px;
+    color: black;
+    background-color: #faf8e7;
+    border: solid 2px black;
+    border-radius: 15px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+.menu a:hover {
+    background-color: #4a6644;
+    color: white;
+    border-color: white;
+}
+.menu a:active {
+    color: black;
+}
+
+.stick-menu:before {
+    top: -9px;
+  }
+.stick-menu:after {
+    bottom: -9px;
+}
+.stick-menu {
+    background: #000;
+    border-radius: 3px;
+    display: grid;
+    height: 3px;
+    position: relative;
+    transform-origin: center right;
+    transition: background .3s ease 0s;
+    width: 26px;
+}
+.stick-menu:after, .stick-menu:before {
+    background: #000;
+    border-radius: 3px;
+    content: "";
+    /* display: block; */
+    height: 100%;
+    left: 0;
+    position: absolute;
+    transform: rotate(0);
+    transform-origin: center left;
+    transition: transform .3s ease 0s;
+    width: 100%;
+}
+
+
+/* Основная страница */
+/* Подвал */
+footer {
+    background-color: #4a6644;
+    display: grid;
+    font-size: 22px;
+}
+
+.logo-footer img{
+    height: 100px;
+    width: 100px;
+    border: none;
+    padding: 15px;
+    margin-left: 5%;
+}
+.grid-4 {
+    grid-template-columns: repeat(4,1fr);
+}
+
+.info {
+    margin-left: 10%;
+}
+
+.info-sector {
+    padding: 10px;
+    margin: 3%;
+}
+
+
+/* Всплывающие окна */
+
+
+/*  */

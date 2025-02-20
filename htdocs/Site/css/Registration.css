@@ -1,0 +1,141 @@
+* {
+    width: 100%;
+}
+
+body {
+    background-color: #bdecc1;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.body {
+    background-color: #bdecc1;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body h2 {
+    color: #4a6644;
+    font-family: 'Lobster', cursive;
+    font-size: 36px;
+    /* margin-bottom: 30px; */
+    text-align: center;
+}
+
+.forma {
+    background-color: #faf8e7;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.font-reg {
+    color: #4a6644;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: block;
+    text-align: center;
+}
+
+.forma input[type="text"],
+.forma input[type="email"],
+.forma input[type="password"] {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #4a6644;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.forma input[type="text"]:focus,
+.forma input[type="email"]:focus,
+.forma input[type="password"]:focus {
+    border-color: #4a6644;
+    outline: none;
+    box-shadow: 0 0 5px rgba(74, 102, 68, 0.3);
+}
+
+.forma input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #4a6644;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.forma input[type="submit"]:hover {
+    background-color: #3d5538;
+}
+
+/* Стили для сообщений об ошибках */
+.error-message {
+    color: #ff4444;
+    font-size: 14px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 480px) {
+    .forma {
+        padding: 20px;
+    }
+
+    .body h2 {
+        font-size: 28px;
+    }
+}
+
+footer {
+    margin-top: 0;
+    background-color: #4a6644;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.registration-header {
+    background-color: #bdecc1;
+    height: 80px; /* Уменьшенная высота */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.registration-header .title {
+    text-align: center;
+}
+
+.registration-header .title h2 {
+    margin: 0;
+    font-family: 'Lobster', cursive;
+    font-size: 36px;
+}
+
+.registration-header .title a {
+    color: #4a6644;
+    text-decoration: none;
+}
+
+.registration-header .title a:hover {
+    color: #3d5538;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Корзина TechStyle</title>
+        <link rel="stylesheet" href="../css/Main.css">
+        <link rel="stylesheet" href="../css/basketStyle.css">
+        <link rel="stylesheet" href="../css/regForm.css">
+        <link rel="stylesheet" type="text/css" href="../css/sliderAnim.css">
+        <link rel="stylesheet" type="text/css" href="../css/mainFrame.css">
+        <link rel="stylesheet" type="text/css" href="../css/Basement.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../js/jQuery.js" ></script>
+        <script src="../js/validate.js" ></script>
+        <!-- Шрифты -->
+        <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster:400">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;1,100&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap" rel="stylesheet">
+        <!-- jQuery library -->
+        <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"> </script>
+    </head>
+    <body>
+        <!-- Шапка -->
+        <header class="grid">
+            <div class="grid grid-2-columns-hat">
+                <div class="logo" name="logo">
+                    <img src="../images/__.png">
+                </div>
+                <div class="title_and_search grid grid-3-rows">
+                    <div class="title" name="title">
+                      <h2><a href="Main.html">TechStyle</a></h2>
+                    </div>
+                    <div class="search" name="search">
+                        <form action="" method="get">
+                          <input name="s" placeholder="Искать здесь..." type="search">
+                          <button class="circle" type="submit"><img src="../search.png" alt="Описание иконки" height="25" width="25"></button>
+                        </form>
+                    </div>
+                    <div class="menu-buttons-block grid grid-10">
+                        <button class="menu-button " aria-label="Навигация по сайту">
+                            <span class="stick-menu"></span>
+                        </button>
+                      <div class="menu"><a href=#>Акции</a></div>
+                      <div class="menu"><a href=#>Магазины</a></div>
+                      <div class="menu"><a href=#>Доставка</a></div>
+                      <div class="menu"><a href=#>Покупателям</a></div>
+                      <div class="menu"><a href=#>Избранное</a></div>
+                      <div class="menu"><a href="Basket.html">Корзина</a></div>
+                      <!-- <div class="menu"><button class="reg" id="openModal">Войти</button></div> -->
+                      <div class="menu"><a id="openModal" href="#0">Войти</a></div>
+                      <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h2 class="text-center regName">Авторизация</h2>
+                            <form class="forma" action="/register" method="POST" id="registrationForm">
+                              <div id="" class="form-group text-center nameBlock">
+                                  <label for="name" class="font-reg">Логин:</label>
+                                  <input class="inputform has-success has-error" type="text" id="name" name="name" required>
+                                  <h5 id="usercheck" style="color: red;">
+                                      **Username is missing
+                                  </h5>
+                              </div>
+                              <div class="form-group text-center emailBlock">
+                                  <label for="email" class="font-reg">Электронная почта:</label>
+                                  <input class="inputform has-success has-error" type="email" id="email" name="email" required>
+                                  <h5 class="error" id="invalid_email"></h5>
+                              </div>
+                              <div class="form-group text-center">
+                                  <label for="password" class="font-reg">Пароль:</label>
+                                  <input class="inputform" type="password" id="password" name="password" required>
+                                  <h5 id="passcheck" style="color: red;">**Please Fill the password</h5>
+                              </div>
+                              <div class="form-group text-center">
+                                  <button type="submit" id="submit" class="button-reg">Войти</button>
+                              </div>
+                              <div class="reg">
+                                  <a href="#">Зарегистрироваться?</a>
+                              </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        </header>
+        <!-- Слайдер -->
+
+        <!-- Основная страница -->
+        <div class="main">
+            <h4 class="title-main text-center">Корзина</h4>
+
+        </div>
+        
+        </div>
+        <!-- Подвал -->
+        <footer>
+            <div class="footer grid-2">
+                <div class="logo-footer grid-3">
+                    <img src="../images/__.png">
+                </div>
+                <div class="info grid grid-4">
+                      <div class="info-sector">
+                        <ul class="column1" style="list-style-type: none">
+                          <li>О Компании</li>
+                          <li>Новости</li>
+                          <li>Партнерам</li>
+                          <li>Вакансии</li>
+                          <li>Политика конфиденциальности</li>
+                          <li>Персональные данные</li>
+                          <li>Правила продаж</li>
+                          <li>Правила пользования сайта</li>
+                        </ul>
+                      </div>
+                      <div class="info-sector2">
+                        <ul class="column3" style="list-style-type: none">
+                          <li>Как оформить заказ</li>
+                          <li>Способы оплаты</li>
+                          <li>Кредиты</li>
+                          <li>Доставка</li>
+                          <li>Статус заказа</li>
+                          <li>Обмен, возврат, гарантия</li>
+                        </ul>
+                      </div>
+                    <div class="info-sector3">
+                        <ul class="column2" style="list-style-type: none">
+                          <li>Юридическим лицам&nbsp;</li>
+                          <li>Подарочные карты</li>
+                          <li>Бонусная программа</li>
+                          <li>Помощь</li>
+                          <li>Обратная связь</li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+.forma {
+    width: 400px;
+}
+.registration-form {
+    /* max-width: 400px; */
+    width: 100px;
+    margin: auto;
+    background: white;
+    /* padding: 20px; */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input {
+    width: 80%;
+    /* padding: 10px; */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.font-reg {
+    font-size: 22px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.button-reg{
+    position: relative;
+    width: 60%;
+    padding: 0 10px;
+    margin-top: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: #faf8e7;
+    background-color: #4a6644;
+    border-radius: 30px;
+    border: solid 1px #faf8e7;
+}
+.button-reg:hover {
+    background-color: #faf8e7;
+    color: #4a6644;
+    border: #4a6644 1px solid;
+}
+
+input.inputform {
+    border-radius: 30px;
+    border: #4a6644 1px solid;
+    height: 35px;
+}
+input.inputform:focus {
+    /* border: #4a6644 2px solid; */
+}
+
+.regName {
+    font-size: 25px;
+}
